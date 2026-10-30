@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Kronos · Trip</title>
+<style>
+:root{--bg:#f7f3ec;--card:#fffdf8;--fg:#2b2620;--mut:#8a7f72;--acc:#b5651d;--line:#e6ddd0}
+[data-theme=ink]{--bg:#121214;--card:#1c1c20;--fg:#e8e6e3;--mut:#8b8b93;--acc:#e0b354;--line:#2c2c33}
+[data-theme=sage]{--bg:#eef2ec;--card:#f8faf6;--fg:#24302a;--mut:#73806f;--acc:#4f7a5a;--line:#d6e0d2}
+[data-theme=dusk]{--bg:#e9e8f2;--card:#f5f4fa;--fg:#27253a;--mut:#77738f;--acc:#6a5fa8;--line:#d6d3e6}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg)}
+.wrap{max-width:1200px;margin:0 auto;padding:24px 16px 48px}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+h1{font-weight:600;font-size:1.5rem;margin:0}h2{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:32px 0 12px;font-weight:600}
+.ctx{color:var(--mut);margin:6px 0 0}
+.themes{display:flex;gap:6px}.themes button{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:5px 10px;border-radius:99px;cursor:pointer;font:inherit;font-size:.8rem}
+.themes button.on{border-color:var(--acc);color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.day.today{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc) inset}
+.day h3{margin:0;font-size:1rem}.tag{font-size:.75rem;color:var(--mut)}.badge{display:none;font-size:.7rem;color:var(--acc);font-weight:600;margin-left:6px}.today .badge{display:inline}
+ul{padding-left:0;list-style:none;margin:10px 0 0}li{padding:6px 0;border-top:1px solid var(--line);font-size:.88rem}
+.t{color:var(--acc);font-variant-numeric:tabular-nums;font-weight:600;margin-right:4px}.sub{color:var(--mut);font-size:.8rem}.soc{color:var(--mut);font-style:italic}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+footer{margin-top:32px;color:var(--mut);font-size:.85rem}footer li{border-color:var(--line)}
+</style></head><body><div class="wrap">
+<header><div><h1>Kronos · Trip</h1><p class="ctx">Thu Nov 5 to Thu Nov 12 · all times local time</p></div>
+<div class="themes" id="themes"><button data-t="paper">Paper</button><button data-t="ink">Ink</button><button data-t="sage">Sage</button><button data-t="dusk">Dusk</button></div></header>
+<h2>Outbound</h2><div class="two">
+<div class="card"><h3>Thu Nov 5 · Flight 1</h3><ul><li><span class="t">8:25</span>Depart</li><li><span class="t">13:05</span>Arrive, connect</li></ul></div>
+<div class="card"><h3>Thu Nov 5 · Flight 2</h3><ul><li><span class="t">19:20</span>Depart <span class="sub">long leg</span></li><li><span class="t">20:20</span>Arrive same evening</li></ul></div>
+</div>
+<h2>Days</h2><div class="two">
+<div class="card"><h3>Fri Nov 6</h3><ul><li><span class="t">9:00–10:00</span>Bank appointment<div class="sub">Check the confirmation email for the branch.</div></li><li>Afternoon with sister</li><li>Shopping run by car</li></ul></div>
+<div class="card"><h3>Sat Nov 7</h3><ul><li><span class="t">6:45</span>Leave by bike share, about 75–90 min, mostly trail<div class="sub">Dress in layers, wear something bright, bring a helmet. E-bike: leave around 7:15.</div></li><li><span class="t">8:00</span>Join the online line on the way</li><li><span class="t">8:30–10:00</span>Licence renewal<div class="sub">Vision test and fee. Bring passport and old licence.</div></li><li><span class="t">10:15–11:15</span>International Driving Permit<div class="sub">Bring the temporary licence and passport.</div></li><li>Afternoon free</li></ul></div>
+<div class="card"><h3>Sun Nov 8</h3><ul><li>Day with an old friend</li><li>Noodles and arcades</li></ul></div>
+<div class="card"><h3>Mon Nov 9</h3><ul><li>Open</li><li class="soc">Backup day for the licence renewal</li></ul></div>
+<div class="card"><h3>Tue Nov 10</h3><ul><li>Open until the airport</li></ul></div>
+</div>
+<h2>Return</h2><div class="two">
+<div class="card"><h3>Tue Nov 10 · Flight 3</h3><ul><li><span class="t">17:15</span>Depart</li><li><span class="t">19:45</span>Arrive, connect</li></ul></div>
+<div class="card"><h3>Wed Nov 11 · Flight 4</h3><ul><li><span class="t">0:10</span>Depart <span class="sub">long leg, overnight</span></li><li><span class="t">5:20</span>Arrive Thu Nov 12, connect</li></ul></div>
+<div class="card"><h3>Thu Nov 12 · Flight 5</h3><ul><li><span class="t">7:40</span>Depart</li><li><span class="t">10:40</span>Land home</li></ul></div>
+</div>
+<footer><h2>Notes</h2><ul><li>Online check-in opens 48 hours before each flight. If you bid on an upgrade, wait for the result email first.</li><li>Seats can be picked up to 12 hours before each flight.</li><li>Tell the crew "no nuts" for meals.</li></ul></footer>
+</div><script>
+(function(){var r=document.documentElement,k='kronos-theme';function set(t){if(t==='paper')r.removeAttribute('data-theme');else r.setAttribute('data-theme',t);
+document.querySelectorAll('#themes button').forEach(function(b){b.className=b.getAttribute('data-t')===t?'on':''});try{localStorage.setItem(k,t)}catch(e){}}
+var s='paper';try{s=localStorage.getItem(k)||'paper'}catch(e){}set(s);
+document.getElementById('themes').addEventListener('click',function(e){var t=e.target.getAttribute('data-t');if(t)set(t)});
+/*no today*/var d=null&&new Date(Date.now()+7*3600e3).getUTCDay(),el=document.querySelector('.day[data-d="'+d+'"]');if(el)el.classList.add('today');})();
+</script></body></html>
